@@ -8,7 +8,6 @@ from telegram.ext import Filters
 #import telegram
 
 from echo.config import TG_TOKEN
-from echo.config import TG_API_URL
 
 
 def do_start (bot: Bot, update: Update):
@@ -29,7 +28,6 @@ def do_echo(bot: Bot, update: Update):
 def main():
     bot = Bot(
         token=TG_TOKEN,
-        base_url=TG_API_URL,
     )
     updater = Updater(
         bot=Bot
